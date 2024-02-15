@@ -1,6 +1,6 @@
-import { RegistroActividades } from "./RegistroActividades";
-import { Actividad } from "./Actividad";
-
+import { RegistroActividades } from './RegistroActividades';
+import { Actividad } from './Actividad';
+import { ActividadFisica } from './ActividadFisica.ts';
 
 export class RegistroDiario implements RegistroActividades {
   constructor(public fecha: Date, public actividades: Actividad[] = []) {}
@@ -33,7 +33,6 @@ export class RegistroDiario implements RegistroActividades {
     });
   }
 }
-
 
 const caminar = new ActividadFisica('Caminar', 'Cardiovascular', 30, 50);
 const correr = new ActividadFisica('Correr', 'Cardiovascular', 60, 100);
